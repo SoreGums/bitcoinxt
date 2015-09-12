@@ -7,7 +7,7 @@ $(package)_dependencies=openssl
 
 define $(package)_set_vars
   $(package)_config_opts=--disable-shared --with-ssl
-  arm linux only: $(package)_config_opts=--with-ssl
+  arm only: $(package)_config_opts=--with-ssl
 endef
 
 define $(package)_config_cmds
